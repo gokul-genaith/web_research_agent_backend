@@ -14,38 +14,10 @@ An AI-powered research agent that can search the web, find news articles, and sy
 
 Visit our live demo at: [Web Research Agent Demo](https://webresearchagentbackend-6kcsne7758ekd37pe5d7sq.streamlit.app/)
 
-## Local Setup
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/web-research-agent.git
-cd web-research-agent
-```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the Streamlit app:
-```bash
-streamlit run app.py
-```
-
-## API Keys Required
-
-- Google API Key (for Gemini model)
-- News API Key (for news retrieval)
-
-Get your API keys from:
-- [Google AI Studio](https://makersuite.google.com/app/apikey)
-- [NewsAPI](https://newsapi.org/)
-
-
 ## Running the Application
 1. Clone the repository:
 ```bash
-git clone https://github.com/gokulnath117/web_research_agent.git
+git clone https://github.com/gokulnath117/web_research_agent_backend.git
 cd web-research-agent
 ```
 
