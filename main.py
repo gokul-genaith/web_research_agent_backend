@@ -1,7 +1,5 @@
 from dotenv import load_dotenv
 from pydantic import BaseModel
-# from langchain_openai import ChatOpenAI
-# from langchain_anthropic import ChatAnthropic
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
@@ -33,8 +31,8 @@ prompt = ChatPromptTemplate.from_messages([
             4. Compile all information into a comprehensive response
             
             Always use the tools when researching - don't make up information.
-            Format your final response according to these instructions: {format_instructions}
             Give a Detailed Summary of the research.
+            Format your final response according to these instructions: {format_instructions}
             """,
         ),
         ("human", "{query}"),
