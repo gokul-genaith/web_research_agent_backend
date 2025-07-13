@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get backend URL from environment variable or use default
-BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+BACKEND_URL = os.getenv("http://localhost:8000")
 
 # Page config
 st.set_page_config(
@@ -59,7 +59,7 @@ if query:
         try:
             # Call the FastAPI backend
             response = requests.post(
-                f"{BACKEND_URL}/research",
+                "http://localhost:8000/research",
                 json={"query": query}
             )
             
